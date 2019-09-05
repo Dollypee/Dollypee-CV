@@ -1,0 +1,384 @@
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    color: #fff;
+}
+.My-info{
+    background-color: #fff;
+    height: 60vh;
+    color: #7B1FA2;
+    border-top: 15px solid;
+    border-top-color: #7B1FA2;
+}
+#name{
+    text-align: center;
+    font-size: 40px;
+}
+h1{
+    margin-top: -3em;
+}
+.contact{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#name, .contact {
+    margin-top: 60px;
+}
+#obje, #cont{
+    text-align: center;
+}
+#obj{
+    margin: 20px;
+    font-size: 20px;
+}
+img{
+    background-color: white; 
+}
+#mypics{
+    margin-top:25px;
+    border-radius: 50%;
+    border: #7B1FA2 1px solid;
+} 
+
+#edu, #awards, #work-experiences, #leadership, #technical-skill, #skills, #Interests, #referees{
+    margin: 20px 0; 
+    background-color: #fff;
+    color: #7B1FA2;
+}
+h3{
+    background-color: #7B1FA2;
+    color: #fff;
+    text-align: center;
+}
+#obje{
+    background-color: #fff;
+    color: #7B1FA2;
+}
+p, li{
+    padding: 8px;
+}
+.other-info{
+    border-bottom: #7B1FA2 15px solid;
+}
+meter{
+    float: right;
+}
+#referees{
+    margin-bottom: 0;
+}
+
+.details:hover {
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  
+  @media (min-width: 1281px) {
+  
+    h1{
+        font-size: 40px;
+        margin-top: -4em;
+    }
+    #edu{
+      margin-top: 17em; 
+      background-color: #fff;
+      color: #7B1FA2;
+  }
+    
+  }
+  
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    h1{
+        font-size: 40px;
+        margin-top: -4em;
+    }
+    #edu{
+      margin-top: 19em; 
+      background-color: #fff;
+      color: #7B1FA2;
+  }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    h1{
+        font-size: 40px;
+        margin-top: -4em;
+        margin-left: 120px;
+    }
+    #edu{
+      margin-top: 17em; 
+      background-color: #fff;
+      color: #7B1FA2;
+  }
+    
+  }
+  
+ /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    h1{
+        font-size: 40px;
+        margin-top: -4em;
+    }
+    #edu{
+      margin-top: 17em; 
+      background-color: #fff;
+      color: #7B1FA2;
+  }
+    
+  }
+  
+  
+   
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    h1{
+        font-size: 30px;
+        margin-top: -5em;
+        margin-left: 48px;
+    }
+    #edu{
+        margin-top: 20em; 
+        background-color: #fff;
+        color: #7B1FA2;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    h1{
+        font-size: 16px;
+        margin-top: -5.4em;
+        margin-left: 30px;
+    }
+    #edu{
+        margin-top: 60em; 
+        background-color: #fff;
+        color: #7B1FA2;
+    }
+    #mypics{
+        width: 70px;
+        height: 80px;
+        margin-top: 0;
+    }
+    .contact-modal-open-btn{
+        position: fixed;
+        top: 15px;
+        padding: 10px;
+        right: 0;
+        background: #000;
+        font-size: 7px;
+        cursor: pointer;
+        color: #ffffff;
+        width: 40%;
+    }
+    .contact-modal-open-btn h2{
+        background: #000;
+        font-size: 7px;
+        cursor: pointer;
+        color: #ffffff;
+    }
+    
+  }
+
+.contact-modal{
+    height: 100vh;
+    width: 100%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:#777;
+    background:rgb(80, 94, 97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity .3s linear;
+    position: fixed;
+    top: 0;
+}
+.hide-modal{
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+    cursor: none;
+    transition: opacity .3s linear;
+  
+}
+
+
+
+.container {
+	max-width:350px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#contact-form input[type="text"], 
+#contact-form input[type="email"], 
+ #contact-form textarea, 
+ #contact-submit{
+     font:400 12px/16px;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#contact-form {
+	background:#F9F9F9;
+	padding:25px;
+    margin:50px 0;
+    position: relative;
+}
+
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+    width: 100%;
+    position: relative;
+
+}
+
+#contact-form input[type="text"], 
+#contact-form input[type="email"], 
+#contact-form input[type="tel"], 
+#contact-form input[type="url"], 
+#contact-form textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+
+#contact-form textarea {
+	height:100px;
+	max-width:100%;
+    resize:none;
+}
+
+#contact-submit {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background: #E1BEE7 ;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact-submit:hover {
+	background:rgb(173, 0, 204);
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact-submit:active { 
+    box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+
+#contact-form input[type="text"], 
+#contact-form input[type="email"] {
+    padding-top: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background:none;
+}
+
+
+
+#close-btn{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 26px;
+    color: red;
+    padding: 5px;
+    font-weight: 600;
+    transition: font-size .2s linear;
+    cursor: pointer;
+    user-select: none;
+}
+#close-btn:hover{
+    transition: font-size .2s linear;
+    font-size: 29px;
+}
+#close-btn:active{
+    color: green;
+}
+
+.contact-modal-open-btn{
+    position: fixed;
+    top: 15px;
+    padding: 10px;
+    right: 0;
+    background: #000;
+    font-size: 12px;
+    cursor: pointer;
+    color: #ffffff;
+    width: 12%;
+    text-align: center;
+}
+.contact-modal-open-btn:hover{
+    background-color: #E1BEE7;
+}
